@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EventManagementSystem.Database\EventManagementSystem.Database.csproj" />
+  </ItemGroup>
+
 </Project>
