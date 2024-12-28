@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementSystem", "Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementSystem.Domain", "EventManagementSystem.Domain\EventManagementSystem.Domain.csproj", "{6007EA7B-0506-4CA6-B7B8-2045D920D662}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementSystem.Database", "EventManagementSystem.Database\EventManagementSystem.Database.csproj", "{745155DF-849F-4AB1-BC7F-ACECD2EA32EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{76BE19D6-61D2-4DA3-9056-1788E7DCE526}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +28,10 @@ Global
 		{6007EA7B-0506-4CA6-B7B8-2045D920D662}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6007EA7B-0506-4CA6-B7B8-2045D920D662}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6007EA7B-0506-4CA6-B7B8-2045D920D662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745155DF-849F-4AB1-BC7F-ACECD2EA32EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745155DF-849F-4AB1-BC7F-ACECD2EA32EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745155DF-849F-4AB1-BC7F-ACECD2EA32EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745155DF-849F-4AB1-BC7F-ACECD2EA32EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

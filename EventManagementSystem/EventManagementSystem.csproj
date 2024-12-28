@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EventManagementSystem.Database\EventManagementSystem.Database.csproj" />
+    <ProjectReference Include="..\EventManagementSystem.Domain\EventManagementSystem.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

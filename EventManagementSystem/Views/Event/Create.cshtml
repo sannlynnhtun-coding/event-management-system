@@ -1,0 +1,22 @@
+﻿@model Event
+
+<h2>Create Event</h2>
+<form asp-action="Create">
+    <div>
+        <label>Title:</label>
+        <input asp-for="Title" />
+    </div>
+    <div>
+        <label>Description:</label>
+        <textarea asp-for="Description"></textarea>
+    </div>
+    <div>
+        <label>Date:</label>
+        <input asp-for="Date" type="date" />
+    </div>
+    <div>
+        <label>Location:</label>
+        <input asp-for="Location" />
+    </div>
+    <button type="submit">Create</button>
+</form>

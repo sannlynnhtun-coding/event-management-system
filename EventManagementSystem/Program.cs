@@ -1,4 +1,8 @@
+using EventManagementSystem.Domain.Features;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<EventService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

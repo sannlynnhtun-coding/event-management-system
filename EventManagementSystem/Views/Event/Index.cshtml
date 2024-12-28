@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Event>
+
+<h2>Event List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var event in Model)
+        {
+        <tr>
+            <td>@event.Title</td>
+            <td>@event.Date.ToShortDateString()</td>
+            <td>@event.Location</td>
+        </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="Create">Add New Event</a>
