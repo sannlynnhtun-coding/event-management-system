@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementSystem", "EventManagementSystem\EventManagementSystem.csproj", "{B562EE63-271D-4471-9B9B-91DE8E4F420D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementSystem.Domain", "EventManagementSystem.Domain\EventManagementSystem.Domain.csproj", "{6007EA7B-0506-4CA6-B7B8-2045D920D662}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B562EE63-271D-4471-9B9B-91DE8E4F420D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B562EE63-271D-4471-9B9B-91DE8E4F420D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B562EE63-271D-4471-9B9B-91DE8E4F420D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6007EA7B-0506-4CA6-B7B8-2045D920D662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6007EA7B-0506-4CA6-B7B8-2045D920D662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6007EA7B-0506-4CA6-B7B8-2045D920D662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6007EA7B-0506-4CA6-B7B8-2045D920D662}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
