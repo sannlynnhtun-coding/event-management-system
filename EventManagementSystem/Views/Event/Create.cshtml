@@ -1,22 +1,28 @@
 ﻿@model Event
 
-<h2>Create Event</h2>
-<form asp-action="Create">
-    <div>
-        <label>Title:</label>
-        <input asp-for="Title" />
+<h2 class="text-2xl font-bold mb-6">Create Event</h2>
+<form asp-action="Create" class="space-y-4 bg-white p-6 shadow-md rounded-md">
+    <div class="flex flex-col">
+        <label for="Title" class="text-sm font-medium text-gray-700 mb-1">Title:</label>
+        <input asp-for="Title" id="Title" class="border border-gray-300 rounded-md px-4 py-2 focus:ring-blue-500 focus:border-blue-500 text-gray-700" />
+        <span asp-validation-for="Title" class="text-red-500 text-sm"></span>
     </div>
-    <div>
-        <label>Description:</label>
-        <textarea asp-for="Description"></textarea>
+    <div class="flex flex-col">
+        <label for="Description" class="text-sm font-medium text-gray-700 mb-1">Description:</label>
+        <textarea asp-for="Description" id="Description" class="border border-gray-300 rounded-md px-4 py-2 focus:ring-blue-500 focus:border-blue-500 text-gray-700"></textarea>
+        <span asp-validation-for="Description" class="text-red-500 text-sm"></span>
     </div>
-    <div>
-        <label>Date:</label>
-        <input asp-for="Date" type="date" />
+    <div class="flex flex-col">
+        <label for="Date" class="text-sm font-medium text-gray-700 mb-1">Date:</label>
+        <input asp-for="Date" id="Date" type="date" class="border border-gray-300 rounded-md px-4 py-2 focus:ring-blue-500 focus:border-blue-500 text-gray-700" />
+        <span asp-validation-for="Date" class="text-red-500 text-sm"></span>
     </div>
-    <div>
-        <label>Location:</label>
-        <input asp-for="Location" />
+    <div class="flex flex-col">
+        <label for="Location" class="text-sm font-medium text-gray-700 mb-1">Location:</label>
+        <input asp-for="Location" id="Location" class="border border-gray-300 rounded-md px-4 py-2 focus:ring-blue-500 focus:border-blue-500 text-gray-700" />
+        <span asp-validation-for="Location" class="text-red-500 text-sm"></span>
     </div>
-    <button type="submit">Create</button>
+    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        Create
+    </button>
 </form>

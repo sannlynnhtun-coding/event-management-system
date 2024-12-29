@@ -1,23 +1,29 @@
 ﻿@model IEnumerable<Event>
 
-<h2>Event List</h2>
-<table>
-	<thead>
-		<tr>
-			<th>Title</th>
-			<th>Date</th>
-			<th>Location</th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var item in Model)
-		{
-			<tr>
-				<td>@item.Title</td>
-				<td>@item.Date.ToShortDateString()</td>
-				<td>@item.Location</td>
-			</tr>
-		}
-	</tbody>
-</table>
-<a asp-action="Create">Add New Event</a>
+<div class="p-6 bg-gray-50 shadow-sm rounded-md">
+    <h2 class="text-2xl font-bold mb-6">Event List</h2>
+    <div class="overflow-x-auto">
+        <table class="min-w-full bg-white shadow-md rounded-md border border-gray-200">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="text-left px-4 py-2 font-medium text-gray-700 border-b">Title</th>
+                    <th class="text-left px-4 py-2 font-medium text-gray-700 border-b">Date</th>
+                    <th class="text-left px-4 py-2 font-medium text-gray-700 border-b">Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-2 border-b text-gray-700">@item.Title</td>
+                        <td class="px-4 py-2 border-b text-gray-700">@item.Date.ToShortDateString()</td>
+                        <td class="px-4 py-2 border-b text-gray-700">@item.Location</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <a asp-action="Create" class="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        Add New Event
+    </a>
+</div>
