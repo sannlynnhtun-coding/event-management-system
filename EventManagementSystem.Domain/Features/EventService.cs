@@ -1,29 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.Logging;
 using EventManagementSystem.Database.AppDbContextModels;
 
 namespace EventManagementSystem.Domain.Features;
 
 public class EventService
 {
-    private readonly AppDbContext _context;
+    private readonly AppDbContext _dbContext;
+    private readonly ILogger<EventService> _logger;
 
-    public EventService(AppDbContext context)
+    public EventService(AppDbContext dbContext, ILogger<EventService> logger)
     {
-        _context = context;
+        _dbContext = dbContext;
+        _logger = logger;
     }
 
     public IEnumerable<Event> GetAllEvents()
     {
-        return _context.Events.ToList();
+        _logger.LogInformation("Retrieving all events");
+        return _dbContext.Events.ToList();
     }
 
     public void CreateEvent(Event newEvent)
     {
-        _context.Events.Add(newEvent);
-        _context.SaveChanges();
+        _logger.LogInformation("Creating a new event");
+        _dbContext.Events.Add(newEvent);
+        _dbContext.SaveChanges();
     }
 }
